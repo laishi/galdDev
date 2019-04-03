@@ -208,6 +208,7 @@
 }
 
 .titleItem {
+    color: #ccc;
     position: relative;
     width: 20%;
     float: left;
