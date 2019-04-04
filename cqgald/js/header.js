@@ -49,18 +49,22 @@ window.addEventListener('mousemove', function (e) {
     eventDirectX = e.x;
     eventDirectY = e.y;
 
-    clipImage.forEach(function (ele, index) {
+    for (var i = 0; i < clipImage.length; i++) {
+        var element = clipImage[i];
 
-        imgPoseachX = imgPosX * 10 * ((index - 3) / 100);
-        imgPoseachY = imgPosY * 2 * ((index - 3) / 100);
 
-        var sourceX = parseFloat(ele.getAttribute("x"))
-        var sourceY = parseFloat(ele.getAttribute("y"))
+        imgPoseachX = imgPosX * 10 * ((i - 3) / 100);
+        imgPoseachY = imgPosY * 2 * ((i - 3) / 100);
 
-        ele.setAttribute("x", sourceX + imgPoseachX);
-        ele.setAttribute("y", sourceY + imgPoseachY);
+        var sourceX = parseFloat(element.getAttribute("x"))
+        var sourceY = parseFloat(element.getAttribute("y"))
 
-    })
+        element.setAttribute("x", sourceX + imgPoseachX);
+        element.setAttribute("y", sourceY + imgPoseachY);
+
+    }
+
+
 
 });
 
