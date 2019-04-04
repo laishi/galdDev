@@ -24,45 +24,45 @@ function iconOut(item) {
 
 
 
-// var eventDirectX = window.innerWidth / 2;
-// var eventDirectY = window.innerHeight / 2;
+var eventDirectX = window.innerWidth / 2;
+var eventDirectY = window.innerHeight / 2;
 
-// window.addEventListener('mousemove', function (e) {
+window.addEventListener('mousemove', function (e) {
 
-//     var clipImage = document.querySelectorAll(".clipImg")
+    var clipImage = document.querySelectorAll(".clipImg")
 
-//     var imgPosX = 0
-//     var imgPosY = 0
+    var imgPosX = 0
+    var imgPosY = 0
 
-//     if (e.x > eventDirectX) {
-//         imgPosX = e.x - eventDirectX
-//     } else {
-//         imgPosX = e.x - eventDirectX
-//     }
+    if (e.x > eventDirectX) {
+        imgPosX = e.x - eventDirectX
+    } else {
+        imgPosX = e.x - eventDirectX
+    }
 
-//     if (e.y < eventDirectY) {
-//         imgPosY = e.y - eventDirectY
-//     } else {
-//         imgPosY = e.y - eventDirectY
-//     }
+    if (e.y < eventDirectY) {
+        imgPosY = e.y - eventDirectY
+    } else {
+        imgPosY = e.y - eventDirectY
+    }
 
-//     eventDirectX = e.x;
-//     eventDirectY = e.y;
+    eventDirectX = e.x;
+    eventDirectY = e.y;
 
-//     clipImage.forEach(function (ele, index) {
+    clipImage.forEach(function (ele, index) {
 
-//         imgPoseachX = imgPosX * 10 * ((index - 3) / 100);
-//         imgPoseachY = imgPosY * 2 * ((index - 3) / 100);
+        imgPoseachX = imgPosX * 10 * ((index - 3) / 100);
+        imgPoseachY = imgPosY * 2 * ((index - 3) / 100);
 
-//         var sourceX = parseFloat(ele.getAttribute("x"))
-//         var sourceY = parseFloat(ele.getAttribute("y"))
+        var sourceX = parseFloat(ele.getAttribute("x"))
+        var sourceY = parseFloat(ele.getAttribute("y"))
 
-//         ele.setAttribute("x", sourceX + imgPoseachX);
-//         ele.setAttribute("y", sourceY + imgPoseachY);
+        ele.setAttribute("x", sourceX + imgPoseachX);
+        ele.setAttribute("y", sourceY + imgPoseachY);
 
-//     })
+    })
 
-// });
+});
 
 
 
